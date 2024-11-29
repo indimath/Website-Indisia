@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divitiae</title>
+    <style>
+      img {
+        width: 200px;
+        /* Atur lebar gambar */
+        height: auto;
+        /* Biarkan tinggi otomatis sesuai rasio aslinya */
+      }
+    </style>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menusection.css" />
+    <link rel="stylesheet" href="css/scrolltotop.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">Divi<span>tiae</span>.</a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">List</a>
+        <a href="comment.php">Comment</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Fav</span> List</h2>
+  
+      <p>My Most Comfortable Traditional Attires.</p>
+  
+      <hr class="section-divider-menu" />
+      <div class="row">
+          <div class="menu-card">
+              <a href="makanan.html">
+                  <img src="./img/menu/makanan.jpeg" alt="makanan" class="menu-card-img" />
+              </a>
+              <h3 class="menu-card-title">
+                  <a href="makanan.html">- Makanan Tradisional -</a>
+              </h3>
+          </div>
+          <div class="menu-card">
+              <a href="tari.html">
+                  <img src="./img/menu/tari.jpeg" alt="Bangka Belitung" class="menu-card-img" />
+              </a>
+              <h3 class="menu-card-title">
+                  <a href="tari.html">- Tarian Tradisional -</a>
+              </h3>
+          </div>
+          <div class="menu-card">
+              <a href="adat.html">
+                  <img src="./img/menu/adat.jpeg" alt="Adat Istiadat" class="menu-card-img" />
+              </a>
+              <h3 class="menu-card-title">
+                  <a href="adat.html">- Upacara Adat-</a>
+              </h3>
+          </div>
+          <div class="menu-card">
+              <a href="baju.html">
+                  <img src="./img/menu/baju.jpeg" alt="Baju Adat" class="menu-card-img" />
+              </a>
+              <h3 class="menu-card-title">
+                  <a href="baju.html">- Pakaian Adat -</a>
+              </h3>
+          </div>
+          <div class="menu-card">
+              <a href="agama.html">
+                  <img src="./img/menu/agama.jpeg" alt="Agama" class="menu-card-img" />
+              </a>
+              <h3 class="menu-card-title">
+                  <a href="agama.html">- Agama -</a>
+              </h3>
+          </div>
+          <div class="menu-card">
+              <a href="rumah.html">
+                  <img src="./img/menu/rumah.jpeg" alt="rumah" class="menu-card-img" />
+              </a>
+              <h3 class="menu-card-title">
+                  <a href="rumah.html">- Rumah Adat -</a>
+              </h3>
+          </div>
+      </div>
+  </section>
+  
+    <!-- Menu Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/riskaindisia?igsh=MTZtbjNodzJ3ZmJpYQ=="><i data-feather="instagram"></i></a>
+        <a href="https://www.instagram.com/riskaindisia?igsh=MTZtbjNodzJ3ZmJpYQ=="><i data-feather="twitter"></i></a>
+        <a href="https://www.instagram.com/riskaindisia?igsh=MTZtbjNodzJ3ZmJpYQ=="><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="menu.html">List</a>
+        <a href="contact.html">Contact Me</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Indisia</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+      <i data-feather="chevrons-up"></i>
+    </button>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/scrolltotop.js"></script>
+  </body>
+</html>

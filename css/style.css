@@ -1,0 +1,572 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+  .contact p{
+    font-size: x-large;
+  }
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.menu{
+  margin-top: 60px;
+}
+
+.menu-detail-content h2{
+  color: #b6895b;
+}
+
+.menu-detail-content p{
+  text-align: start;
+  margin-left: 25px;
+}
+
+.menu p {
+  font-size: large;
+}
+/* Desain dasar tombol */
+.btn1 {
+  background-color: #b6895b; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  font-size: 16px; /* Ukuran font */
+  padding: 12px 24px; /* Jarak dalam tombol */
+  border: none; /* Menghilangkan border default */
+  border-radius: 50px; /* Sudut melengkung untuk tombol */
+  text-transform: uppercase; /* Membuat teks menjadi huruf besar */
+  cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+  transition: all 0.3s ease; /* Efek transisi saat hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Efek saat hover */
+.btn1:hover {
+  background-color: #926e4a; /* Warna latar belakang berubah saat hover */
+  transform: translateY(-4px); /* Mengangkat tombol sedikit saat hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Efek fokus */
+.btn1:focus {
+  outline: none; /* Menghilangkan outline default */
+  box-shadow: 0 0 0 3px rgba(255, 87, 51, 0.5); /* Memberikan fokus dengan bayangan */
+}
+
+
+/* Hero Section */
+.container {
+  display: flex;
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center;    /* Pusatkan secara vertikal */
+}
+
+.slideshow {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-top: 100px;
+}
+
+.slides img {
+  display: none; /* Semua gambar disembunyikan secara default */
+  width: 100%; /* Gambar memenuhi kontainer */
+  height: 500px;
+  border-radius: 10px;
+}
+
+.slides img.active {
+  display: block; /* Gambar aktif ditampilkan */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  outline: none;
+  z-index: 1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* About Section */
+.about,
+.menu,
+.products,
+.contact {
+  padding: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.products h2 span,
+.contact h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img{
+  border-radius: 20px;
+  width: 600px;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* Section Baru */
+.section-baru {
+  padding: 8rem 7% 1.4rem;
+}
+
+.section-baru h2 {
+  display: flex;
+  justify-items: start;
+  justify-content: center;
+  font-size: 2.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-baru h2 span {
+  color: var(--primary);
+}
+
+.section-baru .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-baru .row .content {
+  flex: 1 1 45%;
+  padding: 0 1rem;
+}
+
+.section-baru .row .content img{
+  width: 900px;
+  height: 400px;
+}
+
+.section-baru .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section-baru .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.section-baru .row .section-img {
+  flex: 1 1 45%;
+}
+
+.section-baru .row .section-img img {
+  width: 90%; /* Mengurangi lebar gambar menjadi 90% dari lebar kontainer */
+  max-width: 100%; /* Menjaga proporsi gambar agar tidak melebihi lebar kontainer */
+  border-radius: 20px;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--primary); /* Warna coklat */
+  width: 70%;
+  margin: 4rem auto; /* Atur jarak atas dan bawah sesuai keinginan */
+}
+
+.section-baru1 img{
+  width: 250px;
+  height: 175px;
+  margin: 25px;
+  margin-top: 0;
+}
+
+.section-baru1 h2{
+  margin-top: 1rem;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #353535;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment strong {
+    font-size: 18px;
+    color: #b6895b;
+}
+
+.comment p {
+    margin-top: 5px;
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    text-align: start;
+}
+
+.comment small {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.alert.error {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+  .section-baru .row {
+    flex-direction: column; /* Mengubah orientasi menjadi vertical pada layar kecil */
+  }
+
+  .section-baru .row .content {
+    margin-bottom: 2rem; /* Menambahkan jarak antar item */
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .section-baru .row .section-img img {
+    max-width: 100%; /* Mengisi lebar layar penuh */
+    border-radius: 10px;
+  }
+}
+
+.bungkus{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Jarak antar kolom */
+  padding: 30px;
+  height:auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.section-baru{
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #6e462e;
+  border-left: 1px solid #ccc; /* Sekat antara kiri dan tengah */
+  border-right: 1px solid #ccc; /* Sekat antara tengah dan kanan */
+  border-radius: 30px;
+}
+.section-baru1{
+  flex: 2;
+  padding: 10px;
+  text-align: center;
+  background-color: #6e462e;
+  border-left: 1px solid #ccc; /* Sekat antara kiri dan tengah */
+  border-right: 1px solid #ccc; /* Sekat antara tengah dan kanan */
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+.section-baru1 img {
+  border-radius: 10px;
+}
+
+.section-baru img {
+  border-radius: 10px;
+}
+
+#contact{
+  margin-top: 40px;
+}

@@ -1,0 +1,97 @@
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  padding-right: 20px; /* Mengurangi padding kanan */
+  padding-left: 20px; /* Mengurangi padding kiri */
+}
+
+.about-content {
+  padding-top: 125px;
+  text-align: justify;
+}
+
+.gbr_kopi {
+  display: flex;
+  justify-content: center; /* Menengahkan gambar secara horizontal */
+  align-items: center; /* Menengahkan gambar secara vertikal */
+  padding-bottom: 20px;
+}
+
+.gbr_kopi img {
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar maksimum kontainer */
+  height: auto; /* Menjaga proporsi gambar */
+}
+
+.section-divider-about {
+  border: none;
+  height: 1px;
+  background-color: var(--primary); /* Warna coklat */
+  width: 30%;
+  margin: 4rem auto; /* Atur jarak atas dan bawah sesuai keinginan */
+}
+
+span {
+  color: var(--primary);
+}
+
+article {
+  padding-left: 20px; /* Mengurangi padding kiri */
+  padding-right: 20px; /* Mengurangi padding kanan */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ul .li {
+  padding-left: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Menambahkan gaya untuk membuat bagian "Cerita Kita" lebih lebar */
+.our-story {
+  max-width: 900px; /* Menentukan lebar maksimum */
+  margin: 0 auto; /* Memusatkan konten */
+  padding: 20px; /* Menambahkan ruang di sekitar konten */
+  border-radius: 10px; /* Mengubah sudut menjadi lebih melengkung */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk menonjolkan konten */
+}
+
+.our-story h2 {
+  color: var(--primary);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.our-story h3 {
+  color: var(--primary);
+  font-size :28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.our-story p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.our-story a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.our-story a:hover {
+  text-decoration: underline;
+}
